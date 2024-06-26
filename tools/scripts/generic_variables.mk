@@ -1,5 +1,7 @@
-# Default platform is set as Mbed
-PLATFORM = mbed
+# Default platform is set as Mbed if not changed while building
+PLATFORM ?= mbed
+
+$(info Selected Platform is: $(PLATFORM))
 
 # IIO client (REMOTE/LOCAL)
 IIO_CLIENT = REMOTE
